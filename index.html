@@ -8,7 +8,7 @@
 
       CSS Demo Form
       Author: Nathaniel Aufdenberg, Nolan Bell, Thomas Lowe
-      Date:   
+      Date:   12-12-23
 
       Filename:   wm_demo.html
 
@@ -16,15 +16,17 @@
    
    <meta charset="utf-8" />
       <title>CSS Styles Demo</title>
-      <link href="wm_reset.css" rel="stylesheet" />      
-      <link href="wm_styles.css" rel="stylesheet" />     
+      <link href="/Styles/wm_reset.css" rel="stylesheet" />      
+      <link href="/Styles/wm_styles.css" rel="stylesheet" />   
+      <link href="/Styles/wm_forms.css" rel="stylesheet" />
+      <script src="/wm_script.js"></script>
    </head>
 
 
    <body>
 
       <header>
-         <img src="wm_logo.png" alt="WidgetMage" />
+         <img src="/Imgs/wm_logo.png" alt="WidgetMage" />
          <nav class="horizontal">
             <ul>
                <li><a href="#">Home</a></li>
@@ -68,13 +70,103 @@
 
       <section>
          <h1>CSS Demo</h1>
-         
+         <form>
+            <textarea name="sampleText" id="sampleBox" cols="30" rows="10" placeholder="Enter sample text and press the Tab key" 
+            autofocus tabindex="1" wrap="hard"></textarea>
+            <p>Select the CSS style values from the form below and preview the 
+            effect on the sample text in the preview box.</p>
+            <fieldset>
+               <legend>Fonts</legend>
+               <label for="fontfamily">Font Family</label>
+               <select name="fontfamily" id="fontfamily">
+                  
+                  <option value="default">default</option>
+                  <option value="serif">serif</option>
+                  <option value="sans-serif">sans-serif</option>
+                  <option value="monospace">monospace</option>
+                  <option value="cursive">cursive</option>
+                  <option value="fantasy">fantasy</option>
+                  <option value="Arial">Arial</option>
+                  <option value="'Book Antiqua'">'Book Antiqua'</option>
+                  <option value="'Courier New'">'Courier New'</option>
+                  <option value="Geneva">Geneva</option>
+                  <option value="Helvetica">Helvetica</option>
+                  <option value="Impact">Impact</option>
+                  <option value="Palatino">Palatino</option>
+                  <option value="Tahoma">Tahoma</option>
+                  <option value="'Times New Roman'">'Times New Roman'</option>
+               </select>
+               
+               <label for="fontstyle">Font Style</label>
+               <select name="fontstyle" id="fontstyle">
+                  <option value="normal">normal</option>
+                  <option value="italic">italic</option>
+                  <option value="oblique">oblique</option>
+               </select>
+               
+               <label for="fontweight">Font Weight</label>
+               <select name="fontweight" id="">
+                  <option value="normal">normal</option>
+                  <option value="bold">bold</option>
+               </select>
+               
+               <label for="textdecoration">Text Decoration</label>
+               <select name="textdecoration" id="texdecoration">
+                  <option value="none">normal</option>
+                  <option value="line-through"></option>
+               </select>
+               
+               <label for="texttransform">Text Transform</label>
+               <select name="texttransformation" id="texttransformation">
+                  <option value="none">none</option>
+                  <option value="capitalize">capitalize</option>
+                  <option value="lowercase">lowercase</option>
+               </select>
+               
+               <label for="fontvariant">Font Variant</label>
+               <select name="fontvarient" id="fontvarient">
+                  <option value="normal">normal</option>
+                  <option value="small-caps">small-caps</option>
+               </select>
+            </fieldset>
+            <fieldset>
+               <legend>Colors</legend>
+               <label for="hexadecimal">Font Color(hexadecimal)</label>
+               <input type="color" name="color" id="color" value="#000000" />
+
+               <label for="hexadecimal">Font Color(hexadecimal)</label>
+               <input type="background color" name="background color" id="background color" value="#rrggbb" />
+               <placeholder></placeholder>
+            </fieldset>
+            <fieldset>
+               <legend>Sizes</legend>
+               <label for="fontsize">Font Size (px)</label>
+               <div>
+                  <input type="range" name="fontsize" id="fontsize" min="8" max="40" step="1" value="14" />
+               </div>
+               <label for="letterspacing">Letter Spacing(px)</label>
+               <div>
+                  <input type="range" id="letterspacing"name="letterspacing" step="1" min="0" max="10" value="0" />
+               </div>
+               <label for="wordspacing">Word Spacing(px)</label>
+               <div>
+                  <input type="range" id="wordspacing"  name="wordspacing" step="1" min="0" max="10" value="0" />
+               </div>
+               <label for="lineheight">Line Height (em)</label>
+               <div>
+                  <input type="range" name="lineheight" step="0.2" min="0" max="4" value="1" id="lineheight" />
+               </div>
+               <label for="textindent">Text Indent</label>
+               <div>
+                  <input type="range" name="textindent" id="textindent" min="0" max="10px"step="1" value="0"  />
+               </div>
+            </fieldset>
+         </form>
 
          <h2>Rendered Text</h2>
-         <div id="output"></div>
+         <div id="output"></div>"
          
       </section>
-
        
    </body>
 
