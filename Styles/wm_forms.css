@@ -49,7 +49,24 @@ label {
    float: left;
    display: block;
    width: 40%;
-   
+   margin-top: 2px;
+   margin-bottom: 2px;
+   margin-left: 0px;
+   margin-right: 0px;
+}
+
+input {
+   margin-top: 2px;
+   margin-bottom: 2px;
+   margin-left: 0px;
+   margin-right: 0px;
+}
+
+select {
+   margin-top: 2px;
+   margin-bottom: 2px;
+   margin-left: 0px;
+   margin-right: 0px;
 }
 
 
