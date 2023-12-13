@@ -16,9 +16,9 @@
    
    <meta charset="utf-8" />
       <title>CSS Styles Demo</title>
-      <link href="/Styles/wm_reset.css" rel="stylesheet" />      
-      <link href="/Styles/wm_styles.css" rel="stylesheet" />   
-      <link href="/Styles/wm_forms.css" rel="stylesheet" />
+      <link href="../Styles/wm_reset.css" rel="stylesheet" />      
+      <link href="../Styles/wm_styles.css" rel="stylesheet" />   
+      <link href="../Styles/wm_forms.css" rel="stylesheet" />
       <script src="/wm_script.js"></script>
    </head>
 
@@ -26,7 +26,7 @@
    <body>
 
       <header>
-         <img src="/Imgs/wm_logo.png" alt="WidgetMage" />
+         <img src="../Imgs/wm_logo.png" alt="WidgetMage" />
          <nav class="horizontal">
             <ul>
                <li><a href="#">Home</a></li>
@@ -71,6 +71,7 @@
       <section>
          <h1>CSS Demo</h1>
          <form>
+            <!--Gives a place for the user to type in their text and another box with the final results of their editing at the end of their editing-Nathaniel Aufdenberg-->
             <textarea name="sampleText" id="sampleBox" cols="30" rows="10" placeholder="Enter sample text and press the Tab key" 
             autofocus tabindex="1" wrap="hard"></textarea>
             <p>Select the CSS style values from the form below and preview the 
@@ -79,7 +80,7 @@
                <legend>Fonts</legend>
                <label for="fontfamily">Font Family</label>
                <select name="fontfamily" id="fontfamily">
-                  
+                  <!--The fonts, courtesy of Thomas Lowe-->
                   <option value="default">default</option>
                   <option value="serif">serif</option>
                   <option value="sans-serif">sans-serif</option>
@@ -99,30 +100,31 @@
                
                <label for="fontstyle">Font Style</label>
                <select name="fontstyle" id="fontstyle">
+                  <!--The fontstyles, courtesy of Thomas Lowe-->
                   <option value="normal">normal</option>
                   <option value="italic">italic</option>
                   <option value="oblique">oblique</option>
                </select>
-               
+               <!-- Gives the option of making the font bold or just normal-Nathaniel Aufdenberg -->
                <label for="fontweight">Font Weight</label>
                <select name="fontweight" id="">
                   <option value="normal">normal</option>
                   <option value="bold">bold</option>
                </select>
-               
+               <!--Puts in the option to put a line through the text or leave it normal-Nathaniel Aufdenberg  -->
                <label for="textdecoration">Text Decoration</label>
                <select name="textdecoration" id="texdecoration">
                   <option value="none">normal</option>
                   <option value="line-through"></option>
                </select>
-               
+               <!---->
                <label for="texttransform">Text Transform</label>
                <select name="texttransformation" id="texttransformation">
                   <option value="none">none</option>
                   <option value="capitalize">capitalize</option>
                   <option value="lowercase">lowercase</option>
                </select>
-               
+               <!---->
                <label for="fontvariant">Font Variant</label>
                <select name="fontvarient" id="fontvarient">
                   <option value="normal">normal</option>
@@ -131,6 +133,7 @@
             </fieldset>
             <fieldset>
                <legend>Colors</legend>
+               <!--This changes the color of the text itself-Nathaniel Aufdenberg-->
                <label for="hexadecimal">Font Color(hexadecimal)</label>
                <input type="color" name="color" id="color" value="#000000" />
 
@@ -142,8 +145,10 @@
                <legend>Sizes</legend>
                <label for="fontsize">Font Size (px)</label>
                <div>
+                  <!--I, Thomas lowe, also did the font size.-->
                   <input type="range" name="fontsize" id="fontsize" min="8" max="40" step="1" value="14" />
                </div>
+               <!--Gives a range of how space out the letters are between each other-Nathaniel Aufdenberg-->
                <label for="letterspacing">Letter Spacing(px)</label>
                <div>
                   <input type="range" id="letterspacing"name="letterspacing" step="1" min="0" max="10" value="0" />
@@ -154,8 +159,10 @@
                </div>
                <label for="lineheight">Line Height (em)</label>
                <div>
+                  <!--Return of Thomas, who worked on line height-->
                   <input type="range" name="lineheight" step="0.2" min="0" max="4" value="1" id="lineheight" />
                </div>
+               <!--Gives a range of how far you want the beginning of the text to indent on the page-Nathaniel Aufdenberg-->
                <label for="textindent">Text Indent</label>
                <div>
                   <input type="range" name="textindent" id="textindent" min="0" max="10px"step="1" value="0"  />
