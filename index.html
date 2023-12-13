@@ -16,9 +16,9 @@
    
    <meta charset="utf-8" />
       <title>CSS Styles Demo</title>
-      <link href="/Styles/wm_reset.css" rel="stylesheet" />      
-      <link href="/Styles/wm_styles.css" rel="stylesheet" />   
-      <link href="/Styles/wm_forms.css" rel="stylesheet" />
+      <link href="./Styles/wm_reset.css" rel="stylesheet" />      
+      <link href="./Styles/wm_styles.css" rel="stylesheet" />   
+      <link href="./Styles/wm_forms.css" rel="stylesheet" />
       <script src="/wm_script.js"></script>
    </head>
 
@@ -117,41 +117,43 @@
                   <option value="none">normal</option>
                   <option value="line-through"></option>
                </select>
-               <!---->
+               <!-- To Transfer the text and capitalize and lowercase letters in the section of the paragraph on our website- Nolan Bell-->
                <label for="texttransform">Text Transform</label>
                <select name="texttransformation" id="texttransformation">
                   <option value="none">none</option>
                   <option value="capitalize">capitalize</option>
                   <option value="lowercase">lowercase</option>
                </select>
-               <!---->
+               <!-- Changes the font of the text and including small and normal capital letters in the paragraph - Nolan Bell-->
                <label for="fontvariant">Font Variant</label>
                <select name="fontvarient" id="fontvarient">
                   <option value="normal">normal</option>
                   <option value="small-caps">small-caps</option>
                </select>
             </fieldset>
+            <!-- Nolan Bell -->
+            <!--This changes the color of the text itself and the legends tag gives a title to the fieldset-Nathaniel Aufdenberg-->
             <fieldset>
                <legend>Colors</legend>
-               <!--This changes the color of the text itself-Nathaniel Aufdenberg-->
                <label for="hexadecimal">Font Color(hexadecimal)</label>
                <input type="color" name="color" id="color" value="#000000" />
-
+               <!-- Nate -->
+               <!-- This changes the background color of our website-Nolan Bell-->
                <label for="hexadecimal">Font Color(hexadecimal)</label>
                <input type="background color" name="background color" id="background color" value="#rrggbb" />
-               <placeholder></placeholder>
             </fieldset>
+            <!-- Nolan Bell -->
             <fieldset>
                <legend>Sizes</legend>
                <label for="fontsize">Font Size (px)</label>
                <div>
                   <!--I, Thomas lowe, also did the font size.-->
                   <input type="range" name="fontsize" id="fontsize" min="8" max="40" step="1" value="14" />
-               </div>
+               </div> <!--Thomas-->
                <!--Gives a range of how space out the letters are between each other-Nathaniel Aufdenberg-->
                <label for="letterspacing">Letter Spacing(px)</label>
-               <div>
-                  <input type="range" id="letterspacing"name="letterspacing" step="1" min="0" max="10" value="0" />
+               <div><!--Nate-->
+                  <!-- Represents the letter/word spacing line hight and ranger-Nolan Bell --><input type="range" id="letterspacing"name="letterspacing" step="1" min="0" max="10" value="0" />
                </div>
                <label for="wordspacing">Word Spacing(px)</label>
                <div>
@@ -159,14 +161,16 @@
                </div>
                <label for="lineheight">Line Height (em)</label>
                <div>
-                  <!--Return of Thomas, who worked on line height-->
-                  <input type="range" name="lineheight" step="0.2" min="0" max="4" value="1" id="lineheight" />
+                 
+                  <input type="range" name="lineheight" <!--Return of Thomas, who worked on line height--> step="0.2" min="0" max="4" value="1" id="lineheight" />
                </div>
+               <!-- Nolan Bell -->
                <!--Gives a range of how far you want the beginning of the text to indent on the page-Nathaniel Aufdenberg-->
                <label for="textindent">Text Indent</label>
                <div>
                   <input type="range" name="textindent" id="textindent" min="0" max="10px"step="1" value="0"  />
                </div>
+               <!--Nate-->
             </fieldset>
          </form>
 
