@@ -17,9 +17,9 @@
    <meta charset="utf-8" />
       <title>CSS Styles Demo</title>
       <link href="./Styles/wm_reset.css" rel="stylesheet" />      
-      <link href="./Styles/wm_styles.css" rel="stylesheet" />   
+      <link href="./Styles/wm_styles.css" rel="stylesheet" />
       <link href="./Styles/wm_forms.css" rel="stylesheet" />
-      <script src="/wm_script.js"></script>
+      <script src="./wm_script.js"></script>
    </head>
 
 
@@ -81,21 +81,25 @@
                <label for="fontfamily">Font Family</label>
                <select name="fontfamily" id="fontfamily">
                   <!--The fonts, courtesy of Thomas Lowe-->
-                  <option value="default">default</option>
-                  <option value="serif">serif</option>
-                  <option value="sans-serif">sans-serif</option>
-                  <option value="monospace">monospace</option>
-                  <option value="cursive">cursive</option>
-                  <option value="fantasy">fantasy</option>
-                  <option value="Arial">Arial</option>
-                  <option value="'Book Antiqua'">'Book Antiqua'</option>
-                  <option value="'Courier New'">'Courier New'</option>
-                  <option value="Geneva">Geneva</option>
-                  <option value="Helvetica">Helvetica</option>
-                  <option value="Impact">Impact</option>
-                  <option value="Palatino">Palatino</option>
-                  <option value="Tahoma">Tahoma</option>
-                  <option value="'Times New Roman'">'Times New Roman'</option>
+                  <optgroup label="generic">
+                     <option value="default">default</option>
+                     <option value="serif">serif</option>
+                     <option value="sans-serif">sans-serif</option>
+                     <option value="monospace">monospace</option>
+                     <option value="cursive">cursive</option>
+                     <option value="fantasy">fantasy</option>
+                  </optgroup>
+                  <optgroup label="specific">
+                     <option value="Arial">Arial</option>
+                     <option value="'Book Antiqua'">'Book Antiqua'</option>
+                     <option value="'Courier New'">'Courier New'</option>
+                     <option value="Geneva">Geneva</option>
+                     <option value="Helvetica">Helvetica</option>
+                     <option value="Impact">Impact</option>
+                     <option value="Palatino">Palatino</option>
+                     <option value="Tahoma">Tahoma</option>
+                     <option value="'Times New Roman'">'Times New Roman'</option>
+                  </optgroup>
                </select>
                
                <label for="fontstyle">Font Style</label>
@@ -107,7 +111,7 @@
                </select>
                <!-- Gives the option of making the font bold or just normal-Nathaniel Aufdenberg -->
                <label for="fontweight">Font Weight</label>
-               <select name="fontweight" id="">
+               <select name="fontweight" id="fontweight">
                   <option value="normal">normal</option>
                   <option value="bold">bold</option>
                </select>
@@ -116,6 +120,8 @@
                <select name="textdecoration" id="texdecoration">
                   <option value="none">none</option>
                   <option value="line-through">line-through</option>
+                  <option value="overline">overline</option>
+                  <option value="underline">underline</option>
                </select>
                <!-- To Transfer the text and capitalize and lowercase letters in the section of the paragraph on our website- Nolan Bell-->
                <label for="texttransform">Text Transform</label>
@@ -126,7 +132,7 @@
                </select>
                <!-- Changes the font of the text and including small and normal capital letters in the paragraph - Nolan Bell-->
                <label for="fontvariant">Font Variant</label>
-               <select name="fontvarient" id="fontvarient">
+               <select name="fontvariant" id="fontvariant">
                   <option value="normal">normal</option>
                   <option value="small-caps">small-caps</option>
                </select>
@@ -135,12 +141,12 @@
             <!--This changes the color of the text itself and the legends tag gives a title to the fieldset-Nathaniel Aufdenberg-->
             <fieldset>
                <legend>Colors</legend>
-               <label for="hexadecimal">Font Color(hexadecimal)</label>
-               <input type="color" name="color" id="color" value="#FFFFFF" placeholder="#rrggbb"/>
+               <label for="color">Font Color(hexadecimal)</label>
+               <input type="color" name="color" id="color" value="#000000" placeholder="#rrggbb"/>
                <!-- Nate -->
                <!-- This changes the background color of our website-Nolan Bell-->
                <label for="backgroundcolor">Background Color (hexadecimal)</label>
-               <input type="color" name="backgroundcolor" id="backgroundcolor" value="#000000" placeholder="#rrggbb" />
+               <input type="color" name="backgroundcolor" id="backgroundcolor" value="#FFFFFF" placeholder="#rrggbb" />
             </fieldset>
             <!-- Nolan Bell -->
             <fieldset>
@@ -182,7 +188,6 @@
                    0
                    <input type="range" name="textindent" id="textindent" min="0" max="10"step="1" value="0"  />
                    10
-                  
                </div>
                <!--Nate-->
             </fieldset>
